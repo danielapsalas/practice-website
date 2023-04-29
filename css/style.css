@@ -153,16 +153,25 @@ a{
 }
 
 /*Icons*/
-.icon{
+.icon {
     width: 40px;
     height: 40px;
 }
 
-.icon--primary{
+.icon--small {
+    width: 30px;
+    height: 30px;
+}
+
+.icon--primary {
     fill: var(--color-primary);
 }
 
-.icon-container{
+.icon--white {
+    fill: #fff;
+}
+
+.icon-container {
     background: #f3f9fa;
     width: 64px;
     height: 64px;
@@ -170,6 +179,10 @@ a{
     display: inline-flex;
     justify-content: center;
     align-items: center;
+}
+
+.icon-container--accent {
+    background: var(--color-accent);
 }
 
 /*Buttons*/
@@ -440,3 +453,36 @@ a{
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+/*testimonial*/
+.testimonial {
+    padding: 3rem;
+}
+
+.testimonial .quote {
+    margin: 2rem 0;
+    font-size: 110%;
+}
+
+.testimonial__image {
+    position: relative;
+    margin: 0 3rem;
+}
+
+.testimonial__image>.icon-container {
+    position: absolute;
+    top: 3rem;
+    right: -32px;
+}
+
+@media screen and (min-width: 768px) {
+    .testimonial__image {
+        margin: 0;
+    }
+    .testimonial .quote {
+        margin: 5rem 0 0 6rem;
+        font-size: 120%;
+        line-height: 1.5;
+    }
+}
+
