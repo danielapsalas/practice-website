@@ -127,7 +127,7 @@ a{
 .list{
     list-style: none;
     padding-left: 0;
-    colo: var(--color-headings)
+    color: var(--color-headings)
 }
 
 .list--inline .list__item{
@@ -224,7 +224,7 @@ a{
 .btn--outline{
     background: #fff;
     color: var(--color-headings);
-    boorder: 2px solid var(--color-headings);
+    border: 2px solid var(--color-headings);
 }
 
 .btn--outline:hover{
@@ -275,4 +275,25 @@ a{
     .input{
         font-size: 1.5rem;
     }
+}
+
+/*cards*/
+.card{
+    border-radius: 7px;
+    box-shadow: 0 0 20px 10px #f3f3f3;
+    overflow: hidden;
+}
+
+.card__header, .card__body{
+    padding: 2rem 3rem
+}
+
+.card--primary .card__header{
+    background: var(--color-primary);
+    color: white;
+}
+
+.card--secondary .card__header{
+    background: var(--color-secondary);
+    color: white;
 }
